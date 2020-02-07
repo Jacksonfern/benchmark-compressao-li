@@ -1,0 +1,10 @@
+com/jackson/app/App.class
+com/jackson/app/pfordelta/PForDeltaUnpack128WIthIntBuffer.class
+com/jackson/app/pfordelta/PForDeltaUnpack128.class
+com/jackson/app/FastPFor.class
+com/jackson/app/pfordelta/Simple16WithHardCodes.class
+com/jackson/app/PForDelta.class
+com/jackson/app/Milc.class
+com/jackson/app/pfordelta/Simple16.class
+com/jackson/app/pfordelta/PForDelta.class
+com/jackson/app/pfordelta/LCPForDelta.class
