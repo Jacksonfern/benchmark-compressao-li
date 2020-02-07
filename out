@@ -5,273 +5,738 @@
 [[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
 [[1;34mINFO[m] 
 [[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.6.0:java[m [1m(default-cli)[m @ [36minverted-list-compression[0;1m ---[m
-Tempo de compressao (NewPForDelta): 1.37935ms
-Tempo de descompressao (NewPForDelta): 2.4977959999999997ms
-Espaco: 3.48E-4MB
+************************************
+Tamanho da lista: 65536
+Tamanho: 0.262144MB
+*Gerando lista de espalhamento 1...
+Tempo de compressao (NewPForDelta): 9.336267666666666ms
+Tempo de descompressao (NewPForDelta): 47.911139999999996ms
+Espaco: 0.010244MB
 
-0 - 0
-8 - 8
-16 - 16
-19 - 19
-22 - 22
-24 - 24
-28 - 28
-34 - 34
-36 - 36
-45 - 45
-51 - 51
-56 - 56
-63 - 63
-70 - 70
-70 - 70
-74 - 74
-75 - 75
-76 - 76
-82 - 82
-82 - 82
-90 - 90
-98 - 98
-103 - 103
-103 - 103
-111 - 111
-113 - 113
-119 - 119
-124 - 124
-132 - 132
-133 - 133
-134 - 134
-139 - 139
-141 - 141
-143 - 143
-146 - 146
-152 - 152
-157 - 157
-158 - 158
-159 - 159
-162 - 162
-169 - 169
-177 - 177
-186 - 186
-191 - 191
-200 - 200
-200 - 200
-204 - 204
-213 - 213
-217 - 217
-220 - 220
-221 - 221
-226 - 226
-231 - 231
-231 - 231
-233 - 233
-238 - 238
-245 - 245
-254 - 254
-263 - 263
-270 - 270
-274 - 274
-283 - 283
-286 - 286
-288 - 288
-288 - 288
-289 - 289
-295 - 295
-299 - 299
-304 - 304
-312 - 312
-318 - 318
-322 - 322
-326 - 326
-331 - 331
-339 - 339
-346 - 346
-352 - 352
-360 - 360
-365 - 365
-372 - 372
-376 - 376
-382 - 382
-383 - 383
-392 - 392
-399 - 399
-404 - 404
-404 - 404
-407 - 407
-414 - 414
-420 - 420
-422 - 422
-431 - 431
-436 - 436
-438 - 438
-445 - 445
-452 - 452
-459 - 459
-467 - 467
-470 - 470
-473 - 473
-481 - 481
-485 - 485
-489 - 489
-490 - 490
-494 - 494
-495 - 495
-499 - 499
-508 - 508
-511 - 511
-518 - 518
-526 - 526
-535 - 535
-539 - 539
-544 - 544
-550 - 550
-550 - 550
-556 - 556
-560 - 560
-560 - 560
-566 - 566
-572 - 572
-572 - 572
-579 - 579
-587 - 587
-595 - 595
-597 - 597
-597 - 597
-598 - 598
-602 - 602
-604 - 604
-610 - 610
-611 - 611
-616 - 616
-616 - 616
-617 - 617
-623 - 623
-624 - 624
-625 - 625
-627 - 627
-636 - 636
-645 - 645
-649 - 649
-655 - 655
-661 - 661
-664 - 664
-668 - 668
-668 - 668
-671 - 671
-672 - 672
-673 - 673
-676 - 676
-678 - 678
-685 - 685
-689 - 689
-695 - 695
-699 - 699
-699 - 699
-705 - 705
-705 - 705
-713 - 713
-716 - 716
-720 - 720
-723 - 723
-729 - 729
-732 - 732
-740 - 740
-741 - 741
-749 - 749
-757 - 757
-757 - 757
-762 - 762
-770 - 770
-773 - 773
-779 - 779
-781 - 781
-787 - 787
-795 - 795
-802 - 802
-803 - 803
-803 - 803
-808 - 808
-810 - 810
-818 - 818
-824 - 824
-829 - 829
-833 - 833
-839 - 839
-846 - 846
-852 - 852
-852 - 852
-858 - 858
-860 - 860
-867 - 867
-876 - 876
-878 - 878
-881 - 881
-882 - 882
-884 - 884
-884 - 884
-891 - 891
-899 - 899
-903 - 903
-907 - 907
-908 - 908
-913 - 913
-914 - 914
-915 - 915
-923 - 923
-924 - 924
-927 - 927
-929 - 929
-933 - 933
-937 - 937
-940 - 940
-942 - 942
-945 - 945
-947 - 947
-952 - 952
-952 - 952
-959 - 959
-961 - 961
-961 - 961
-968 - 968
-970 - 970
-975 - 975
-980 - 980
-984 - 984
-988 - 988
-997 - 997
-1002 - 1002
-1007 - 1007
-1007 - 1007
-1014 - 1014
-1023 - 1023
-1030 - 1030
-1034 - 1034
-1034 - 1034
-1035 - 1035
-1036 - 1036
-1037 - 1037
-1042 - 1042
-1045 - 1045
-1048 - 1048
-1048 - 1048
-1055 - 1055
-1063 - 1063
-1065 - 1065
-1072 - 1072
-1072 - 1072
-1077 - 1077
-1081 - 1081
-1090 - 1090
-1096 - 1096
-1096 - 1096
-1098 - 1098
-1107 - 1107
-Tempo de compressao (FastPFor): 0.295212ms
-Tempo de descompressao (FastPFor): 0.5967849999999999ms
-Espaco: 3.64E-4MB
+Tempo de compressao (FastPFor): 4.662077ms
+Tempo de descompressao (FastPFor): 27.812133333333335ms
+Espaco: 0.00872MB
+
+Tempo de compressao (Milc): 109.92530033333333ms
+Tempo de descompressao (Milc): 59.90472ms
+Espaco: 0.058628MB
+
+*Gerando lista de espalhamento 10...
+Tempo de compressao (NewPForDelta): 3.428627ms
+Tempo de descompressao (NewPForDelta): 14.04417ms
+Espaco: 0.03482MB
+
+Tempo de compressao (FastPFor): 1.908869ms
+Tempo de descompressao (FastPFor): 7.356369999999999ms
+Espaco: 0.033296MB
+
+Tempo de compressao (Milc): 94.79457566666667ms
+Tempo de descompressao (Milc): 30.261800000000004ms
+Espaco: 0.08112MB
+
+*Gerando lista de espalhamento 50...
+Tempo de compressao (NewPForDelta): 1.548421ms
+Tempo de descompressao (NewPForDelta): 12.249183333333333ms
+Espaco: 0.051204MB
+
+Tempo de compressao (FastPFor): 2.9530713333333334ms
+Tempo de descompressao (FastPFor): 4.831823333333333ms
+Espaco: 0.04968MB
+
+Tempo de compressao (Milc): 105.58389299999999ms
+Tempo de descompressao (Milc): 5.8337900000000005ms
+Espaco: 0.09982MB
+
+*Gerando lista de espalhamento 100...
+Tempo de compressao (NewPForDelta): 1.8605546666666666ms
+Tempo de descompressao (NewPForDelta): 8.61103ms
+Espaco: 0.059396MB
+
+Tempo de compressao (FastPFor): 0.6829486666666668ms
+Tempo de descompressao (FastPFor): 4.366183333333333ms
+Espaco: 0.057872MB
+
+Tempo de compressao (Milc): 109.92629366666667ms
+Tempo de descompressao (Milc): 5.196146666666667ms
+Espaco: 0.107424MB
+
+*Gerando lista de espalhamento 500...
+Tempo de compressao (NewPForDelta): 2.0108216666666667ms
+Tempo de descompressao (NewPForDelta): 9.395346666666667ms
+Espaco: 0.07578MB
+
+Tempo de compressao (FastPFor): 0.6704806666666666ms
+Tempo de descompressao (FastPFor): 4.178546666666667ms
+Espaco: 0.074256MB
+
+Tempo de compressao (Milc): 126.16230999999999ms
+Tempo de descompressao (Milc): 5.527933333333333ms
+Espaco: 0.127436MB
+
+*Gerando lista de espalhamento 1000...
+Tempo de compressao (NewPForDelta): 1.2851676666666667ms
+Tempo de descompressao (NewPForDelta): 7.8363233333333335ms
+Espaco: 0.083972MB
+
+Tempo de compressao (FastPFor): 0.633882ms
+Tempo de descompressao (FastPFor): 3.9871233333333334ms
+Espaco: 0.082448MB
+
+Tempo de compressao (Milc): 138.92582866666666ms
+Tempo de descompressao (Milc): 6.4330533333333335ms
+Espaco: 0.135292MB
+
+************************************
+Tamanho da lista: 131072
+Tamanho: 0.524288MB
+*Gerando lista de espalhamento 1...
+Tempo de compressao (NewPForDelta): 0.9355563333333333ms
+Tempo de descompressao (NewPForDelta): 6.9164933333333325ms
+Espaco: 0.020484MB
+
+Tempo de compressao (FastPFor): 0.9760316666666666ms
+Tempo de descompressao (FastPFor): 5.283743333333334ms
+Espaco: 0.017436MB
+
+Tempo de compressao (Milc): 140.48758433333333ms
+Tempo de descompressao (Milc): 9.490833333333335ms
+Espaco: 0.117252MB
+
+*Gerando lista de espalhamento 10...
+Tempo de compressao (NewPForDelta): 1.2837923333333334ms
+Tempo de descompressao (NewPForDelta): 4.074626666666667ms
+Espaco: 0.069636MB
+
+Tempo de compressao (FastPFor): 0.8636936666666667ms
+Tempo de descompressao (FastPFor): 3.8924333333333334ms
+Espaco: 0.066588MB
+
+Tempo de compressao (Milc): 180.56112733333336ms
+Tempo de descompressao (Milc): 10.415633333333332ms
+Espaco: 0.162068MB
+
+*Gerando lista de espalhamento 50...
+Tempo de compressao (NewPForDelta): 1.3488966666666666ms
+Tempo de descompressao (NewPForDelta): 2.768416666666667ms
+Espaco: 0.102404MB
+
+Tempo de compressao (FastPFor): 0.7149873333333333ms
+Tempo de descompressao (FastPFor): 4.733883333333334ms
+Espaco: 0.099356MB
+
+Tempo de compressao (Milc): 202.51185133333334ms
+Tempo de descompressao (Milc): 10.932616666666668ms
+Espaco: 0.199428MB
+
+*Gerando lista de espalhamento 100...
+Tempo de compressao (NewPForDelta): 1.5065739999999999ms
+Tempo de descompressao (NewPForDelta): 2.8492300000000004ms
+Espaco: 0.118788MB
+
+Tempo de compressao (FastPFor): 0.7940666666666667ms
+Tempo de descompressao (FastPFor): 3.7181366666666666ms
+Espaco: 0.11574MB
+
+Tempo de compressao (Milc): 219.8120236666667ms
+Tempo de descompressao (Milc): 9.987643333333333ms
+Espaco: 0.214868MB
+
+*Gerando lista de espalhamento 500...
+Tempo de compressao (NewPForDelta): 3.301739ms
+Tempo de descompressao (NewPForDelta): 3.3988133333333335ms
+Espaco: 0.151556MB
+
+Tempo de compressao (FastPFor): 1.3030193333333333ms
+Tempo de descompressao (FastPFor): 3.9132699999999994ms
+Espaco: 0.148508MB
+
+Tempo de compressao (Milc): 254.47062866666667ms
+Tempo de descompressao (Milc): 13.754736666666668ms
+Espaco: 0.2547MB
+
+*Gerando lista de espalhamento 1000...
+Tempo de compressao (NewPForDelta): 3.633097333333333ms
+Tempo de descompressao (NewPForDelta): 3.588886666666667ms
+Espaco: 0.16794MB
+
+Tempo de compressao (FastPFor): 1.3606196666666666ms
+Tempo de descompressao (FastPFor): 4.005663333333334ms
+Espaco: 0.164892MB
+
+Tempo de compressao (Milc): 291.6061226666667ms
+Tempo de descompressao (Milc): 14.179366666666667ms
+Espaco: 0.270696MB
+
+************************************
+Tamanho da lista: 262144
+Tamanho: 1.048576MB
+*Gerando lista de espalhamento 1...
+Tempo de compressao (NewPForDelta): 1.965428ms
+Tempo de descompressao (NewPForDelta): 4.714096666666666ms
+Espaco: 0.040964MB
+
+Tempo de compressao (FastPFor): 4.202001999999999ms
+Tempo de descompressao (FastPFor): 6.746133333333333ms
+Espaco: 0.034868MB
+
+Tempo de compressao (Milc): 291.429288ms
+Tempo de descompressao (Milc): 17.777669999999997ms
+Espaco: 0.2345MB
+
+*Gerando lista de espalhamento 10...
+Tempo de compressao (NewPForDelta): 2.3906266666666665ms
+Tempo de descompressao (NewPForDelta): 5.222270000000001ms
+Espaco: 0.139268MB
+
+Tempo de compressao (FastPFor): 1.206302ms
+Tempo de descompressao (FastPFor): 5.435926666666667ms
+Espaco: 0.133172MB
+
+Tempo de compressao (Milc): 358.287714ms
+Tempo de descompressao (Milc): 21.575063333333333ms
+Espaco: 0.324228MB
+
+*Gerando lista de espalhamento 50...
+Tempo de compressao (NewPForDelta): 3.205728ms
+Tempo de descompressao (NewPForDelta): 5.800146666666667ms
+Espaco: 0.204804MB
+
+Tempo de compressao (FastPFor): 1.2769243333333333ms
+Tempo de descompressao (FastPFor): 5.655313333333335ms
+Espaco: 0.198708MB
+
+Tempo de compressao (Milc): 408.87270166666667ms
+Tempo de descompressao (Milc): 20.60347333333333ms
+Espaco: 0.399004MB
+
+*Gerando lista de espalhamento 100...
+Tempo de compressao (NewPForDelta): 3.4910069999999997ms
+Tempo de descompressao (NewPForDelta): 5.352709999999999ms
+Espaco: 0.237572MB
+
+Tempo de compressao (FastPFor): 1.3076906666666668ms
+Tempo de descompressao (FastPFor): 5.1479800000000004ms
+Espaco: 0.231476MB
+
+Tempo de compressao (Milc): 439.05993166666667ms
+Tempo de descompressao (Milc): 20.89ms
+Espaco: 0.429104MB
+
+*Gerando lista de espalhamento 500...
+Tempo de compressao (NewPForDelta): 4.210013333333333ms
+Tempo de descompressao (NewPForDelta): 4.40339ms
+Espaco: 0.303108MB
+
+Tempo de compressao (FastPFor): 1.2962353333333334ms
+Tempo de descompressao (FastPFor): 5.954233333333334ms
+Espaco: 0.297012MB
+
+Tempo de compressao (Milc): 503.95697733333327ms
+Tempo de descompressao (Milc): 20.96045ms
+Espaco: 0.509088MB
+
+*Gerando lista de espalhamento 1000...
+Tempo de compressao (NewPForDelta): 4.469173666666666ms
+Tempo de descompressao (NewPForDelta): 5.644103333333334ms
+Espaco: 0.335876MB
+
+Tempo de compressao (FastPFor): 1.2650789999999998ms
+Tempo de descompressao (FastPFor): 6.542386666666666ms
+Espaco: 0.32978MB
+
+Tempo de compressao (Milc): 532.395531ms
+Tempo de descompressao (Milc): 20.31412333333333ms
+Espaco: 0.541508MB
+
+************************************
+Tamanho da lista: 524288
+Tamanho: 2.097152MB
+*Gerando lista de espalhamento 1...
+Tempo de compressao (NewPForDelta): 2.938279ms
+Tempo de descompressao (NewPForDelta): 9.944716666666666ms
+Espaco: 0.081924MB
+
+Tempo de compressao (FastPFor): 2.8527263333333335ms
+Tempo de descompressao (FastPFor): 9.672303333333332ms
+Espaco: 0.069732MB
+
+Tempo de compressao (Milc): 560.8403986666667ms
+Tempo de descompressao (Milc): 43.92574666666667ms
+Espaco: 0.468996MB
+
+*Gerando lista de espalhamento 10...
+Tempo de compressao (NewPForDelta): 4.840666333333334ms
+Tempo de descompressao (NewPForDelta): 9.458876666666667ms
+Espaco: 0.278532MB
+
+Tempo de compressao (FastPFor): 2.2686040000000003ms
+Tempo de descompressao (FastPFor): 13.197630000000002ms
+Espaco: 0.26634MB
+
+Tempo de compressao (Milc): 712.407463ms
+Tempo de descompressao (Milc): 38.509080000000004ms
+Espaco: 0.649092MB
+
+*Gerando lista de espalhamento 50...
+Tempo de compressao (NewPForDelta): 6.303697333333333ms
+Tempo de descompressao (NewPForDelta): 9.077173333333333ms
+Espaco: 0.409604MB
+
+Tempo de compressao (FastPFor): 2.410711666666667ms
+Tempo de descompressao (FastPFor): 17.814656666666668ms
+Espaco: 0.397412MB
+
+Tempo de compressao (Milc): 818.4544553333334ms
+Tempo de descompressao (Milc): 40.91394333333333ms
+Espaco: 0.798396MB
+
+*Gerando lista de espalhamento 100...
+Tempo de compressao (NewPForDelta): 7.1871936666666665ms
+Tempo de descompressao (NewPForDelta): 9.525533333333334ms
+Espaco: 0.47514MB
+
+Tempo de compressao (FastPFor): 2.9080053333333336ms
+Tempo de descompressao (FastPFor): 10.090123333333333ms
+Espaco: 0.462948MB
+
+Tempo de compressao (Milc): 880.8162593333333ms
+Tempo de descompressao (Milc): 40.63829666666667ms
+Espaco: 0.859828MB
+
+*Gerando lista de espalhamento 500...
+Tempo de compressao (NewPForDelta): 8.245003666666667ms
+Tempo de descompressao (NewPForDelta): 9.922423333333333ms
+Espaco: 0.606212MB
+
+Tempo de compressao (FastPFor): 6.167174ms
+Tempo de descompressao (FastPFor): 10.438313333333333ms
+Espaco: 0.59402MB
+
+Tempo de compressao (Milc): 1012.245277ms
+Tempo de descompressao (Milc): 40.23399666666667ms
+Espaco: 1.018652MB
+
+*Gerando lista de espalhamento 1000...
+Tempo de compressao (NewPForDelta): 8.918311000000001ms
+Tempo de descompressao (NewPForDelta): 9.420996666666666ms
+Espaco: 0.671748MB
+
+Tempo de compressao (FastPFor): 2.63477ms
+Tempo de descompressao (FastPFor): 13.23344ms
+Espaco: 0.659556MB
+
+Tempo de compressao (Milc): 1065.1637036666668ms
+Tempo de descompressao (Milc): 41.998533333333334ms
+Espaco: 1.083392MB
+
+************************************
+Tamanho da lista: 1048576
+Tamanho: 4.194304MB
+*Gerando lista de espalhamento 1...
+Tempo de compressao (NewPForDelta): 6.249972333333333ms
+Tempo de descompressao (NewPForDelta): 26.039213333333336ms
+Espaco: 0.163844MB
+
+Tempo de compressao (FastPFor): 6.104012ms
+Tempo de descompressao (FastPFor): 21.709753333333335ms
+Espaco: 0.13946MB
+
+Tempo de compressao (Milc): 1126.989096ms
+Tempo de descompressao (Milc): 71.15682ms
+Espaco: 0.937988MB
+
+*Gerando lista de espalhamento 10...
+Tempo de compressao (NewPForDelta): 10.799290333333332ms
+Tempo de descompressao (NewPForDelta): 18.554513333333333ms
+Espaco: 0.55706MB
+
+Tempo de compressao (FastPFor): 5.022606333333333ms
+Tempo de descompressao (FastPFor): 19.35362ms
+Espaco: 0.532676MB
+
+Tempo de compressao (Milc): 1432.274299ms
+Tempo de descompressao (Milc): 76.76621333333334ms
+Espaco: 1.297924MB
+
+*Gerando lista de espalhamento 50...
+Tempo de compressao (NewPForDelta): 13.426044666666664ms
+Tempo de descompressao (NewPForDelta): 19.013433333333335ms
+Espaco: 0.819204MB
+
+Tempo de compressao (FastPFor): 5.195936666666667ms
+Tempo de descompressao (FastPFor): 20.71526666666667ms
+Espaco: 0.79482MB
+
+Tempo de compressao (Milc): 1627.2135260000002ms
+Tempo de descompressao (Milc): 89.78401666666666ms
+Espaco: 1.596664MB
+
+*Gerando lista de espalhamento 100...
+Tempo de compressao (NewPForDelta): 14.551743333333333ms
+Tempo de descompressao (NewPForDelta): 19.013426666666668ms
+Espaco: 0.950276MB
+
+Tempo de compressao (FastPFor): 4.937382333333333ms
+Tempo de descompressao (FastPFor): 19.327046666666664ms
+Espaco: 0.925892MB
+
+Tempo de compressao (Milc): 1784.5979636666664ms
+Tempo de descompressao (Milc): 81.02760333333333ms
+Espaco: 1.718732MB
+
+*Gerando lista de espalhamento 500...
+Tempo de compressao (NewPForDelta): 16.933461ms
+Tempo de descompressao (NewPForDelta): 19.331316666666666ms
+Espaco: 1.21242MB
+
+Tempo de compressao (FastPFor): 33.655045ms
+Tempo de descompressao (FastPFor): 21.61266333333333ms
+Espaco: 1.188036MB
+
+Tempo de compressao (Milc): 2022.5842919999998ms
+Tempo de descompressao (Milc): 81.52298333333334ms
+Espaco: 2.037032MB
+
+*Gerando lista de espalhamento 1000...
+Tempo de compressao (NewPForDelta): 20.729353333333332ms
+Tempo de descompressao (NewPForDelta): 19.921916666666664ms
+Espaco: 1.343492MB
+
+Tempo de compressao (FastPFor): 5.1191059999999995ms
+Tempo de descompressao (FastPFor): 20.69577ms
+Espaco: 1.319108MB
+
+Tempo de compressao (Milc): 2127.5205413333333ms
+Tempo de descompressao (Milc): 83.30090000000001ms
+Espaco: 2.165536MB
+
+************************************
+Tamanho da lista: 2097152
+Tamanho: 8.388608MB
+*Gerando lista de espalhamento 1...
+Tempo de compressao (NewPForDelta): 14.189919333333334ms
+Tempo de descompressao (NewPForDelta): 37.01872333333333ms
+Espaco: 0.327684MB
+
+Tempo de compressao (FastPFor): 38.62990966666667ms
+Tempo de descompressao (FastPFor): 38.65092ms
+Espaco: 0.278916MB
+
+Tempo de compressao (Milc): 2248.8225506666668ms
+Tempo de descompressao (Milc): 167.43049ms
+Espaco: 1.875972MB
+
+*Gerando lista de espalhamento 10...
+Tempo de compressao (NewPForDelta): 20.594171999999997ms
+Tempo de descompressao (NewPForDelta): 38.18659333333334ms
+Espaco: 1.114116MB
+
+Tempo de compressao (FastPFor): 42.203174ms
+Tempo de descompressao (FastPFor): 42.61191333333333ms
+Espaco: 1.065348MB
+
+Tempo de compressao (Milc): 2866.9733629999996ms
+Tempo de descompressao (Milc): 154.33712ms
+Espaco: 2.595028MB
+
+*Gerando lista de espalhamento 50...
+Tempo de compressao (NewPForDelta): 26.362014666666667ms
+Tempo de descompressao (NewPForDelta): 38.00315333333333ms
+Espaco: 1.638404MB
+
+Tempo de compressao (FastPFor): 10.526659ms
+Tempo de descompressao (FastPFor): 45.82544333333333ms
+Espaco: 1.589636MB
+
+Tempo de compressao (Milc): 3257.3485756666664ms
+Tempo de descompressao (Milc): 160.64934666666667ms
+Espaco: 3.192032MB
+
+*Gerando lista de espalhamento 100...
+Tempo de compressao (NewPForDelta): 29.118440333333336ms
+Tempo de descompressao (NewPForDelta): 37.80143ms
+Espaco: 1.900548MB
+
+Tempo de compressao (FastPFor): 29.46050033333334ms
+Tempo de descompressao (FastPFor): 43.785059999999994ms
+Espaco: 1.85178MB
+
+Tempo de compressao (Milc): 3522.9624643333336ms
+Tempo de descompressao (Milc): 163.1573ms
+Espaco: 3.438244MB
+
+*Gerando lista de espalhamento 500...
+Tempo de compressao (NewPForDelta): 35.922693ms
+Tempo de descompressao (NewPForDelta): 37.97721666666667ms
+Espaco: 2.424836MB
+
+Tempo de compressao (FastPFor): 11.793278333333333ms
+Tempo de descompressao (FastPFor): 43.381730000000005ms
+Espaco: 2.376068MB
+
+Tempo de compressao (Milc): 4032.716951ms
+Tempo de descompressao (Milc): 163.60761000000002ms
+Espaco: 4.0743MB
+
+*Gerando lista de espalhamento 1000...
+Tempo de compressao (NewPForDelta): 55.872052333333336ms
+Tempo de descompressao (NewPForDelta): 39.91647666666666ms
+Espaco: 2.68698MB
+
+Tempo de compressao (FastPFor): 10.476863ms
+Tempo de descompressao (FastPFor): 40.10390666666667ms
+Espaco: 2.638212MB
+
+Tempo de compressao (Milc): 4251.364716666667ms
+Tempo de descompressao (Milc): 166.57286333333334ms
+Espaco: 4.33322MB
+
+************************************
+Tamanho da lista: 4194304
+Tamanho: 16.777216MB
+*Gerando lista de espalhamento 1...
+Tempo de compressao (NewPForDelta): 56.64361300000001ms
+Tempo de descompressao (NewPForDelta): 71.85804666666667ms
+Espaco: 0.655364MB
+
+Tempo de compressao (FastPFor): 25.085710333333335ms
+Tempo de descompressao (FastPFor): 71.83459333333333ms
+Espaco: 0.557828MB
+
+Tempo de compressao (Milc): 4489.677619666666ms
+Tempo de descompressao (Milc): 283.57699ms
+Espaco: 3.75194MB
+
+*Gerando lista de espalhamento 10...
+Tempo de compressao (NewPForDelta): 41.537044333333334ms
+Tempo de descompressao (NewPForDelta): 72.94628333333334ms
+Espaco: 2.228228MB
+
+Tempo de compressao (FastPFor): 21.292026333333336ms
+Tempo de descompressao (FastPFor): 73.47264ms
+Espaco: 2.130692MB
+
+Tempo de compressao (Milc): 5731.463557666667ms
+Tempo de descompressao (Milc): 341.46031ms
+Espaco: 5.190912MB
+
+*Gerando lista de espalhamento 50...
+Tempo de compressao (NewPForDelta): 53.06105233333333ms
+Tempo de descompressao (NewPForDelta): 77.38058ms
+Espaco: 3.276804MB
+
+Tempo de compressao (FastPFor): 59.22796533333334ms
+Tempo de descompressao (FastPFor): 80.01903ms
+Espaco: 3.179268MB
+
+Tempo de compressao (Milc): 6505.041919333334ms
+Tempo de descompressao (Milc): 321.8718566666667ms
+Espaco: 6.38412MB
+
+*Gerando lista de espalhamento 100...
+Tempo de compressao (NewPForDelta): 58.48190833333334ms
+Tempo de descompressao (NewPForDelta): 77.59073333333333ms
+Espaco: 3.801092MB
+
+Tempo de compressao (FastPFor): 22.24633ms
+Tempo de descompressao (FastPFor): 77.74305333333334ms
+Espaco: 3.703556MB
+
+Tempo de compressao (Milc): 7056.971581000001ms
+Tempo de descompressao (Milc): 322.9014466666667ms
+Espaco: 6.874844MB
+
+*Gerando lista de espalhamento 500...
+Tempo de compressao (NewPForDelta): 95.90220700000002ms
+Tempo de descompressao (NewPForDelta): 76.69204333333333ms
+Espaco: 4.849668MB
+
+Tempo de compressao (FastPFor): 21.932816666666668ms
+Tempo de descompressao (FastPFor): 80.25151333333334ms
+Espaco: 4.752132MB
+
+Tempo de compressao (Milc): 8074.283013333334ms
+Tempo de descompressao (Milc): 326.1436566666667ms
+Espaco: 8.148528MB
+
+*Gerando lista de espalhamento 1000...
+Tempo de compressao (NewPForDelta): 75.64728333333333ms
+Tempo de descompressao (NewPForDelta): 78.52073333333334ms
+Espaco: 5.373956MB
+
+Tempo de compressao (FastPFor): 22.400563666666667ms
+Tempo de descompressao (FastPFor): 79.53318333333333ms
+Espaco: 5.27642MB
+
+Tempo de compressao (Milc): 8493.622127ms
+Tempo de descompressao (Milc): 355.73003666666665ms
+Espaco: 8.6663MB
+
+************************************
+Tamanho da lista: 8388608
+Tamanho: 33.554432MB
+*Gerando lista de espalhamento 1...
+Tempo de compressao (NewPForDelta): 112.82799566666667ms
+Tempo de descompressao (NewPForDelta): 145.53974333333335ms
+Espaco: 1.310724MB
+
+Tempo de compressao (FastPFor): 86.26363733333335ms
+Tempo de descompressao (FastPFor): 147.05371000000002ms
+Espaco: 1.115652MB
+
+Tempo de compressao (Milc): 8967.000325666666ms
+Tempo de descompressao (Milc): 557.51301ms
+Espaco: 7.503876MB
+
+*Gerando lista de espalhamento 10...
+Tempo de compressao (NewPForDelta): 85.54295333333334ms
+Tempo de descompressao (NewPForDelta): 148.22827ms
+Espaco: 4.456452MB
+
+Tempo de compressao (FastPFor): 45.01945866666667ms
+Tempo de descompressao (FastPFor): 154.71354ms
+Espaco: 4.26138MB
+
+Tempo de compressao (Milc): 11490.757259333332ms
+Tempo de descompressao (Milc): 880.81574ms
+Espaco: 10.382472MB
+
+*Gerando lista de espalhamento 50...
+Tempo de compressao (NewPForDelta): 168.78928666666667ms
+Tempo de descompressao (NewPForDelta): 177.79155ms
+Espaco: 6.553604MB
+
+Tempo de compressao (FastPFor): 99.44228566666668ms
+Tempo de descompressao (FastPFor): 188.25396ms
+Espaco: 6.358532MB
+
+Tempo de compressao (Milc): 13088.20506ms
+Tempo de descompressao (Milc): 638.1987633333333ms
+Espaco: 12.768288MB
+
+*Gerando lista de espalhamento 100...
+Tempo de compressao (NewPForDelta): 121.38124466666666ms
+Tempo de descompressao (NewPForDelta): 155.05774333333332ms
+Espaco: 7.60218MB
+
+Tempo de compressao (FastPFor): 46.56144233333333ms
+Tempo de descompressao (FastPFor): 168.79466000000002ms
+Espaco: 7.407108MB
+
+Tempo de compressao (Milc): 14352.744822666667ms
+Tempo de descompressao (Milc): 893.5584033333334ms
+Espaco: 13.751692MB
+
+*Gerando lista de espalhamento 500...
+Tempo de compressao (NewPForDelta): 173.93597ms
+Tempo de descompressao (NewPForDelta): 157.61264000000003ms
+Espaco: 9.699332MB
+
+Tempo de compressao (FastPFor): 85.459974ms
+Tempo de descompressao (FastPFor): 157.14691000000002ms
+Espaco: 9.50426MB
+
+Tempo de compressao (Milc): 16250.911377999999ms
+Tempo de descompressao (Milc): 646.1868566666667ms
+Espaco: 16.297624MB
+
+*Gerando lista de espalhamento 1000...
+Tempo de compressao (NewPForDelta): 149.167292ms
+Tempo de descompressao (NewPForDelta): 161.53983333333335ms
+Espaco: 10.747908MB
+
+Tempo de compressao (FastPFor): 49.01696366666667ms
+Tempo de descompressao (FastPFor): 167.70480999999998ms
+Espaco: 10.552836MB
+
+Tempo de compressao (Milc): 16972.273985666667ms
+Tempo de descompressao (Milc): 720.20801ms
+Espaco: 17.331456MB
+
+************************************
+Tamanho da lista: 16777216
+Tamanho: 67.108864MB
+*Gerando lista de espalhamento 1...
+Tempo de compressao (NewPForDelta): 155.31856966666666ms
+Tempo de descompressao (NewPForDelta): 315.56142ms
+Espaco: 2.621444MB
+
+Tempo de compressao (FastPFor): 143.60208566666665ms
+Tempo de descompressao (FastPFor): 308.2918066666667ms
+Espaco: 2.2313MB
+
+Tempo de compressao (Milc): 17983.82800166667ms
+Tempo de descompressao (Milc): 1175.26883ms
+Espaco: 15.007748MB
+
+*Gerando lista de espalhamento 10...
+Tempo de compressao (NewPForDelta): 204.37170300000002ms
+Tempo de descompressao (NewPForDelta): 313.14511ms
+Espaco: 8.9129MB
+
+Tempo de compressao (FastPFor): 123.73873766666667ms
+Tempo de descompressao (FastPFor): 338.8511066666667ms
+Espaco: 8.522756MB
+
+Tempo de compressao (Milc): 22875.264218333334ms
+Tempo de descompressao (Milc): 1217.2940733333332ms
+Espaco: 20.761596MB
+
+*Gerando lista de espalhamento 50...
+Tempo de compressao (NewPForDelta): 221.18456566666669ms
+Tempo de descompressao (NewPForDelta): 370.53100333333333ms
+Espaco: 13.107204MB
+
+Tempo de compressao (FastPFor): 94.63600766666667ms
+Tempo de descompressao (FastPFor): 356.7705966666667ms
+Espaco: 12.71706MB
+
+Tempo de compressao (Milc): 26040.573026333335ms
+Tempo de descompressao (Milc): 1332.3081300000001ms
+Espaco: 25.539076MB
+
+*Gerando lista de espalhamento 100...
+Tempo de compressao (NewPForDelta): 254.6419843333333ms
+Tempo de descompressao (NewPForDelta): 476.1290666666667ms
+Espaco: 15.204356MB
+
+Tempo de compressao (FastPFor): 101.64830266666667ms
+Tempo de descompressao (FastPFor): 389.66016999999994ms
+Espaco: 14.814212MB
+
+Tempo de compressao (Milc): 28342.015075666666ms
+Tempo de descompressao (Milc): 1302.0741966666667ms
+Espaco: 27.501908MB
+
+*Gerando lista de espalhamento 500...
+Tempo de compressao (NewPForDelta): 281.8895196666667ms
+Tempo de descompressao (NewPForDelta): 391.60458ms
+Espaco: 19.39866MB
+
+Tempo de compressao (FastPFor): 94.28196866666667ms
+Tempo de descompressao (FastPFor): 338.92419666666666ms
+Espaco: 19.008516MB
+
+Tempo de compressao (Milc): 32430.709460333335ms
+Tempo de descompressao (Milc): 1291.4813466666667ms
+Espaco: 32.595352MB
+
+*Gerando lista de espalhamento 1000...
+Tempo de compressao (NewPForDelta): 306.21032199999996ms
+Tempo de descompressao (NewPForDelta): 360.44254ms
+Espaco: 21.495812MB
+
+Tempo de compressao (FastPFor): 89.40784433333333ms
+Tempo de descompressao (FastPFor): 338.88536ms
+Espaco: 21.105668MB
+
+Tempo de compressao (Milc): 33979.05689266667ms
+Tempo de descompressao (Milc): 1331.08809ms
+Espaco: 34.66058MB
 
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
 [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time:  1.791 s
-[[1;34mINFO[m] Finished at: 2020-02-06T21:26:06-04:00
+[[1;34mINFO[m] Total time:  16:36 min
+[[1;34mINFO[m] Finished at: 2020-02-07T19:34:33-04:00
 [[1;34mINFO[m] [1m------------------------------------------------------------------------[m

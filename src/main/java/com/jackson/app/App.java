@@ -1,6 +1,7 @@
 package com.jackson.app;
 
 import me.lemire.integercompression.*;
+import me.lemire.integercompression.differential.Delta;
 import java.util.Random;
 import java.util.Arrays;
 
@@ -25,7 +26,9 @@ public class App
 			inpos.set(0);
 			outpos.set(0);
             long start = System.nanoTime();
-			fp.compress(data, inpos, data.length-inpos.get(), res, outpos);
+			int[] gaps = data.clone();
+			Delta.delta(gaps);
+			fp.compress(gaps, inpos, gaps.length-inpos.get(), res, outpos);
 			long end = System.nanoTime();
 			medExec+=(double)(end-start)/1000000;
 		}
@@ -46,6 +49,8 @@ public class App
 			inpos.set(0);
 			outpos.set(0);
 			fp.uncompress(data, inpos, data.length-inpos.get(), recov, outpos);
+			for(int j=1; j<recov.length; j++)
+				recov[j]+=recov[j-1];
 			long end = System.nanoTime();
 			medExec+=(double)(end-start)/100000;
 		}
@@ -95,7 +100,9 @@ public class App
 			inpos.set(0);
 			outpos.set(0);
             long start = System.nanoTime();
-			newpfd.compress(data, inpos, data.length-inpos.get(), res, outpos);
+			int[] gaps = data.clone();
+			Delta.delta(gaps);
+			newpfd.compress(gaps, inpos, gaps.length-inpos.get(), res, outpos);
 			long end = System.nanoTime();
 			medExec+=(double)(end-start)/1000000;
 		}
@@ -116,6 +123,8 @@ public class App
 			inpos.set(0);
 			outpos.set(0);
 			newpfd.uncompress(data, inpos, data.length-inpos.get(), recov, outpos);
+			for(int j=1; j<recov.length; j++)
+				recov[j]+=recov[j-1];
 			long end = System.nanoTime();
 			medExec+=(double)(end-start)/100000;
 		}
@@ -125,22 +134,31 @@ public class App
 
     public static void main( String[] args )
     {
-        Random rd = new Random();
-        int[] data = new int[256];
-        data[0]=rd.nextInt(10);
-        for(int i=1; i<data.length; i++)
-            data[i]=data[i-1]+rd.nextInt(10);
+		int[] sparse = {1, 10, 50, 100, 500, 1000};
+		for(int i=16; i<25; i++){ //data.length=2^i elementos (multiplo de 512)
+			System.out.println("************************************");
+			System.out.println("Tamanho da lista: " + (1<<i));
+			System.out.println("Tamanho: " + ((double)4*(1<<i)/1000000) + "MB");
+			for(int j=0; j<sparse.length; j++){
+				Random rd = new Random();
+				int[] data = new int[1<<i];
+				System.out.println("*Gerando lista de espalhamento " + (sparse[j])+"...");
+				data[0]=rd.nextInt(sparse[j])+1;
+				for(int k=1; k<data.length; k++)
+					data[k]=data[k-1]+rd.nextInt(sparse[j])+1;
 
-        int[] compressed = testNewPFDCompress(data, 10);
-        int[] tt = testNewPFDUncompress(compressed, 10);
-        System.out.println("Espaco: " + ((double)compressed.length*4/1000000) + "MB\n");
+				int[] compressed = testNewPFDCompress(data, 3);
+				int[] tt = testNewPFDUncompress(compressed, 3);
+				System.out.println("Espaco: " + ((double)compressed.length*4/1000000) + "MB\n");
 
-        compressed = testFastPForCompress(data, 10);
-        tt = testFastPForUncompress(compressed, 10);
-        System.out.println("Espaco: " + ((double)compressed.length*4/1000000) + "MB\n");
+				compressed = testFastPForCompress(data, 3);
+				tt = testFastPForUncompress(compressed, 3);
+				System.out.println("Espaco: " + ((double)compressed.length*4/1000000) + "MB\n");
 
-        compressed = testMilcCompress(data, 1);
-        tt = testMilcUncompress(compressed, 10);
-        System.out.println("Espaco: " + ((double)compressed.length*4/1000000) + "MB\n");
+				compressed = testMilcCompress(data, 3);
+				tt = testMilcUncompress(compressed, 3);
+				System.out.println("Espaco: " + ((double)compressed.length*4/1000000) + "MB\n");
+			}
+		}
     }
 }
