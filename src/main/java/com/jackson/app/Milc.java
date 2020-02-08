@@ -150,43 +150,74 @@ public class Milc{
 		return out;
 	}
 
-	public static void main(String[] args){
-		int[] paperExample = new int[256];
-        for(int i = 108; i > 0; i--) {
-            paperExample[i] = 120+ (int) (1.07*(double) (i-108));
-        }
-        for(int i = 108; i < paperExample.length; i++) {
-            double val = 500D+2.7*(double) (i-108);
-            paperExample[i] = (int) val;
-        }
-
-        // Alignments mentioned in the paper (middle values were not, they're approximations)
-        paperExample[0] = 4;
-        paperExample[107] = 120;
-        paperExample[108] = 500;
-        paperExample[255] = 900;
-
-        // for(int i=0; i<paperExample.length; i++)
-        // 	paperExample[i]=i+1;
-
-        System.out.println("Espaco ocupado: " + ((double)(paperExample.length*4)/1000000) + "MB");
-        System.out.println("\n****MILC****\n");
-
+	 public static int[] testMilcCompress(int[] data, int numTimes){
+		double medExec = 0.0;
+        int[] res = new int[1];
         Milc mc = new Milc();
-        System.out.print("Tempo de compressão: ");
-        long start = System.nanoTime();
-		int[] output = mc.compress(paperExample);
-		long end = System.nanoTime();
 
-		System.out.println(((double)(end-start)/1000000) + "ms");
-		System.out.println("Espaco ocupado: " +((double)(output.length*4)/1000000) + "MB");
-
-		System.out.print("Tempo de descompressão: ");
-		start = System.nanoTime();
-		int[] res = mc.uncompress(output);
-		end = System.nanoTime();
-		System.out.println(((double)(end-start)/1000000) + "ms");
+		for(int i=1; i<=numTimes; i++){
+            long start = System.nanoTime();
+			res = mc.compress(data);
+			long end = System.nanoTime();
+			medExec+=(double)(end-start)/1000000;
+		}
+		System.out.println("Tempo de compressao (Milc): "+ ((double)medExec/numTimes) + "ms");
+        return res;
+        // return res;
 	}
+
+    public static int[] testMilcUncompress(int[] data, int numTimes){
+		double medExec = 0.0;
+        int[] recov = new int[data[0]]; //data[0] = tamanho da lista original
+        Milc mc = new Milc();
+
+		for(int i=1; i<=numTimes; i++){
+			long start = System.nanoTime();
+			recov = mc.uncompress(data);
+			long end = System.nanoTime();
+			medExec+=(double)(end-start)/100000;
+		}
+		System.out.println("Tempo de descompressao (Milc): "+ ((double)medExec/numTimes) + "ms");
+        return recov;
+	}
+
+	// public static void main(String[] args){
+	// 	int[] paperExample = new int[256];
+    //     for(int i = 108; i > 0; i--) {
+    //         paperExample[i] = 120+ (int) (1.07*(double) (i-108));
+    //     }
+    //     for(int i = 108; i < paperExample.length; i++) {
+    //         double val = 500D+2.7*(double) (i-108);
+    //         paperExample[i] = (int) val;
+    //     }
+
+    //     // Alignments mentioned in the paper (middle values were not, they're approximations)
+    //     paperExample[0] = 4;
+    //     paperExample[107] = 120;
+    //     paperExample[108] = 500;
+    //     paperExample[255] = 900;
+
+    //     // for(int i=0; i<paperExample.length; i++)
+    //     // 	paperExample[i]=i+1;
+
+    //     System.out.println("Espaco ocupado: " + ((double)(paperExample.length*4)/1000000) + "MB");
+    //     System.out.println("\n****MILC****\n");
+
+    //     Milc mc = new Milc();
+    //     System.out.print("Tempo de compressão: ");
+    //     long start = System.nanoTime();
+	// 	int[] output = mc.compress(paperExample);
+	// 	long end = System.nanoTime();
+
+	// 	System.out.println(((double)(end-start)/1000000) + "ms");
+	// 	System.out.println("Espaco ocupado: " +((double)(output.length*4)/1000000) + "MB");
+
+	// 	System.out.print("Tempo de descompressão: ");
+	// 	start = System.nanoTime();
+	// 	int[] res = mc.uncompress(output);
+	// 	end = System.nanoTime();
+	// 	System.out.println(((double)(end-start)/1000000) + "ms");
+	// }
 
 	// public static void main(String[] args){
 	// 	int vet[] = {120, 200, 270, 420, 820, 860, 1060, 
