@@ -1,10 +1,14 @@
 /home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/FastPFor.java
 /home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/pfordelta/PForDeltaUnpack128.java
 /home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/pfordelta/PForDeltaUnpack128WIthIntBuffer.java
-/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/pfordelta/PForDelta.java
-/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/App.java
 /home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/Milc.java
 /home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/PForDelta.java
 /home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/pfordelta/Simple16WithHardCodes.java
 /home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/pfordelta/LCPForDelta.java
+/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/Compressor.java
+/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/Uncompressor.java
+/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/pfordelta/PForDelta.java
+/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/Benchmark.java
+/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/App.java
+/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/Indexer.java
 /home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/src/main/java/com/jackson/app/pfordelta/Simple16.java

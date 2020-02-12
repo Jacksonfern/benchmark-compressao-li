@@ -1,1 +1,4 @@
-pfordelta/
+/collections
+.settings
+.vscode
+/indexed

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.jackson.app.AppTest" time="0.052" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.jackson.app.AppTest" time="0.133" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -7,21 +7,21 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/test-classes:/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/classes:/home/jackson/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/jackson/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/jackson/.m2/repository/me/lemire/integercompression/JavaFastPFOR/0.1.12/JavaFastPFOR-0.1.12.jar:"/>
+    <property name="java.class.path" value="/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/test-classes:/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/classes:/home/jackson/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/jackson/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/jackson/.m2/repository/me/lemire/integercompression/JavaFastPFOR/0.1.12/JavaFastPFOR-0.1.12.jar:/home/jackson/.m2/repository/org/apache/lucene/lucene-core/8.4.1/lucene-core-8.4.1.jar:/home/jackson/.m2/repository/org/apache/lucene/lucene-queryparser/8.4.1/lucene-queryparser-8.4.1.jar:/home/jackson/.m2/repository/org/apache/lucene/lucene-queries/8.4.1/lucene-queries-8.4.1.jar:/home/jackson/.m2/repository/org/apache/lucene/lucene-sandbox/8.4.1/lucene-sandbox-8.4.1.jar:/home/jackson/.m2/repository/org/apache/lucene/lucene-analyzers-common/8.4.1/lucene-analyzers-common-8.4.1.jar:"/>
     <property name="java.vm.vendor" value="Private Build"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="user.timezone" value=""/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="os.name" value="Linux"/>
-    <property name="user.country" value="BR"/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/surefire/surefirebooter6055266790774556604.jar /home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/surefire 2020-02-05T20-32-42_639-jvmRun1 surefire3146234343602936750tmp surefire_09127143122380238842tmp"/>
-    <property name="surefire.test.class.path" value="/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/test-classes:/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/classes:/home/jackson/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/jackson/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/jackson/.m2/repository/me/lemire/integercompression/JavaFastPFOR/0.1.12/JavaFastPFOR-0.1.12.jar:"/>
+    <property name="sun.java.command" value="/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/surefire/surefirebooter5374128526747477055.jar /home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/surefire 2020-02-09T13-12-12_947-jvmRun1 surefire1831220752261071099tmp surefire_02649525966757798675tmp"/>
+    <property name="surefire.test.class.path" value="/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/test-classes:/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/classes:/home/jackson/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/jackson/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/jackson/.m2/repository/me/lemire/integercompression/JavaFastPFOR/0.1.12/JavaFastPFOR-0.1.12.jar:/home/jackson/.m2/repository/org/apache/lucene/lucene-core/8.4.1/lucene-core-8.4.1.jar:/home/jackson/.m2/repository/org/apache/lucene/lucene-queryparser/8.4.1/lucene-queryparser-8.4.1.jar:/home/jackson/.m2/repository/org/apache/lucene/lucene-queries/8.4.1/lucene-queries-8.4.1.jar:/home/jackson/.m2/repository/org/apache/lucene/lucene-sandbox/8.4.1/lucene-sandbox-8.4.1.jar:/home/jackson/.m2/repository/org/apache/lucene/lucene-analyzers-common/8.4.1/lucene-analyzers-common-8.4.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/jackson"/>
-    <property name="user.language" value="pt"/>
+    <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
     <property name="basedir" value="/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/surefire/surefirebooter6055266790774556604.jar"/>
+    <property name="surefire.real.class.path" value="/home/jackson/Documentos/UFAM/4_Periodo/RI/compressao-li/inverted-list-compression/target/surefire/surefirebooter5374128526747477055.jar"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_242-8u242-b08-0ubuntu3~18.04-b08"/>
@@ -58,5 +58,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.jackson.app.AppTest" time="0.003"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.jackson.app.AppTest" time="0.005"/>
 </testsuite>

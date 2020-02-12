@@ -29,18 +29,6 @@ public class App
 				data[0]=rd.nextInt(sparse[j])+1;
 				for(int k=1; k<data.length; k++)
 					data[k]=data[k-1]+rd.nextInt(sparse[j])+1;
-
-				int[] compressed = PForDelta.testNewPFDCompress(data, 3);
-				int[] tt = PForDelta.testNewPFDUncompress(compressed, 3);
-				System.out.println("Espaco: " + ((double)compressed.length*4/1000000) + "MB\n");
-
-				compressed = FastPFor.testFastPForCompress(data, 3);
-				tt = FastPFor.testFastPForUncompress(compressed, 3);
-				System.out.println("Espaco: " + ((double)compressed.length*4/1000000) + "MB\n");
-
-				compressed = Milc.testMilcCompress(data, 3);
-				tt = Milc.testMilcUncompress(compressed, 3);
-				System.out.println("Espaco: " + ((double)compressed.length*4/1000000) + "MB\n");
 			}
 		}
     }

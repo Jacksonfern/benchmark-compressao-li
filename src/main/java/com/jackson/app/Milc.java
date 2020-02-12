@@ -34,7 +34,8 @@ public class Milc{
 		int[] memo=new int[data.length];
 		int[] blocks=new int[data.length];
 
-		memo[0]=0;
+		memo[0]=80; //Soh vai ele pro metadados
+		blocks[0]=1;
 		for(int i=1; i<data.length; i++){
 		    memo[i]=1<<30; //numero inicial=oo
 		    for(int j=Math.max(0, i-L); j<i; j++){
@@ -148,37 +149,6 @@ public class Milc{
 		// }
 
 		return out;
-	}
-
-	 public static int[] testMilcCompress(int[] data, int numTimes){
-		double medExec = 0.0;
-        int[] res = new int[1];
-        Milc mc = new Milc();
-
-		for(int i=1; i<=numTimes; i++){
-            long start = System.nanoTime();
-			res = mc.compress(data);
-			long end = System.nanoTime();
-			medExec+=(double)(end-start)/1000000;
-		}
-		System.out.println("Tempo de compressao (Milc): "+ ((double)medExec/numTimes) + "ms");
-        return res;
-        // return res;
-	}
-
-    public static int[] testMilcUncompress(int[] data, int numTimes){
-		double medExec = 0.0;
-        int[] recov = new int[data[0]]; //data[0] = tamanho da lista original
-        Milc mc = new Milc();
-
-		for(int i=1; i<=numTimes; i++){
-			long start = System.nanoTime();
-			recov = mc.uncompress(data);
-			long end = System.nanoTime();
-			medExec+=(double)(end-start)/100000;
-		}
-		System.out.println("Tempo de descompressao (Milc): "+ ((double)medExec/numTimes) + "ms");
-        return recov;
 	}
 
 	// public static void main(String[] args){
