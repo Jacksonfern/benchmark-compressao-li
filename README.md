@@ -6,7 +6,7 @@ Projeto final da disciplina de Recuperação de Informação (Férias-2020). Nes
 obs: Não é recomendado adotar este experimento como base para testar seus próprios métodos para fins de produção de artigo. O ideal seria usar o lucene para indexação e, para testar seu método de compressão, modifique o codec do lucene e insira seu algoritmo.
 
 Indexador
-=========
+---------
 
 Primeiramente, execute o indexador construído em python, usando o seguinte comando:
 
