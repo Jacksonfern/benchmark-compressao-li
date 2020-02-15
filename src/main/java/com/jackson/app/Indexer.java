@@ -1,5 +1,7 @@
 package com.jackson.app;
 
+/*Talvez este arquivo seja inutil*/
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -53,7 +55,6 @@ public class Indexer{
                     aux.add(docId);
                     invFile.put(word, aux);
                 }
-                return;
             }
             reader.close();
         } catch(FileNotFoundException e){

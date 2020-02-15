@@ -1,4 +1,6 @@
-/collections
+/collections/gov_collection
 .settings
 .vscode
 /indexed
+tempo_index.txt
+/collections

@@ -1,5 +1,5 @@
 # from os.path import isfile, join
-import os
+import os, sys
 
 class Indexador:
     def __init__(self, folder, dest):
@@ -21,20 +21,29 @@ class Indexador:
                 else:
                     self.invIndex[term] = [docId]
 
+    def writeStr(self, value, file):
+        for i in range(4):
+            file.write(chr(value&0xff))
+            value>>=8
+
     def writeIndex(self):
-        docId = 0
+        docId = 1
         for i in self.files:
             file = open(os.path.join(self.folder, i), 'r')
             self.indexFile(file, docId)
             docId+=1
         if not os.path.exists('indexed'):
             os.makedirs('indexed')
-        termsFile = open(os.path.join(self.dest, 'file.terms'), 'w+')
-        postingsFile = open(os.path.join(self.dest, 'file.postings'), 'w+')
+        termsFile = open(os.path.join(self.dest, 'gov.terms'), 'w+')
+        postingsFile = open(os.path.join(self.dest, 'gov.postings'), 'w+')
         for i in self.invIndex:
+            if i.isnumeric():
+                continue
             termsFile.write(i+"\n")
+            # self.writeStr(len(self.invIndex[i]), termsFile)
             for docId in self.invIndex[i]:
                 postingsFile.write(str(docId)+" ")
+                # self.writeStr(docId, postingsFile)
             postingsFile.write("\n")
             self.size+=len(i)+4*len(self.invIndex[i]) #tamanho do indice (termo + n*sizeof(int))
 
@@ -45,6 +54,13 @@ class Indexador:
     def getSize(self):
         return self.size/1000000
 
-index = Indexador("collections/basic_collection", "indexed")
-index.writeIndex()
-print("Tamanho do arquivo invertido:", index.getSize(), "MB")
+if len(sys.argv)>1:
+    try:
+        src = sys.argv[1]
+        index = Indexador(src, "indexed")
+        index.writeIndex()
+        print("Tamanho do arquivo invertido:", index.getSize(), "MB")
+    except IOError:
+        print("Diretorio invalido!")
+else:
+    print("Insira o diretorio de origem")

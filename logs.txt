@@ -1,0 +1,198 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------< [0;36mcom.jackson.app:inverted-list-compression[0;1m >--------------[m
+[[1;34mINFO[m] [1mBuilding inverted-list-compression 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:1.6.0:java[m [1m(default-cli)[m @ [36minverted-list-compression[0;1m ---[m
+Tamanhos dos arquivos:
+	*descomprimido: 115,27MB
+	*Comprimido com PForDelta: 53,76MB (2,14:1)
+	*Comprimido com FastPFor: 53,33MB (2,16:1)
+	*Comprimido com Milc: 71,86MB (1,60:1)
+***Query 1
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(Descomprimido): 110.01us
+	#Tempo de processamento em disco(Descomprimido): 582297ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(PForDelta): 58.985us
+	#Tempo de processamento em disco(PForDelta): 71361ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(FastPFor): 53.98us
+	#Tempo de processamento em disco(FastPFor): 71203ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(Milc): 33.371us
+	#Tempo de processamento em disco(Milc): 140633ms
+
+
+***Query 2
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(Descomprimido): 64.69us
+	#Tempo de processamento em disco(Descomprimido): 611584ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(PForDelta): 39.056us
+	#Tempo de processamento em disco(PForDelta): 71264ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(FastPFor): 37.518us
+	#Tempo de processamento em disco(FastPFor): 93487ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(Milc): 34.072us
+	#Tempo de processamento em disco(Milc): 143027ms
+
+
+***Query 3
+	#Documentos relevantes: 39216 4725 24677 18854 14409 
+	#Tempo de processamento em memoria(Descomprimido): 10.56us
+	#Tempo de processamento em disco(Descomprimido): 600859ms
+
+	#Documentos relevantes: 39216 4725 24677 18854 14409 
+	#Tempo de processamento em memoria(PForDelta): 23.119us
+	#Tempo de processamento em disco(PForDelta): 71342ms
+
+	#Documentos relevantes: 39216 4725 24677 18854 14409 
+	#Tempo de processamento em memoria(FastPFor): 20.901us
+	#Tempo de processamento em disco(FastPFor): 71181ms
+
+	#Documentos relevantes: 39216 4725 24677 18854 14409 
+	#Tempo de processamento em memoria(Milc): 19.881us
+	#Tempo de processamento em disco(Milc): 140270ms
+
+
+***Query 4
+	#Documentos relevantes: 86654 
+	#Tempo de processamento em memoria(Descomprimido): 10.776us
+	#Tempo de processamento em disco(Descomprimido): 615022ms
+
+	#Documentos relevantes: 86654 
+	#Tempo de processamento em memoria(PForDelta): 22.368us
+	#Tempo de processamento em disco(PForDelta): 71177ms
+
+	#Documentos relevantes: 86654 
+	#Tempo de processamento em memoria(FastPFor): 21.383us
+	#Tempo de processamento em disco(FastPFor): 71091ms
+
+	#Documentos relevantes: 86654 
+	#Tempo de processamento em memoria(Milc): 17.638us
+	#Tempo de processamento em disco(Milc): 140015ms
+
+
+***Query 5
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(Descomprimido): 20.982us
+	#Tempo de processamento em disco(Descomprimido): 606184ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(PForDelta): 38.473us
+	#Tempo de processamento em disco(PForDelta): 71144ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(FastPFor): 37.49us
+	#Tempo de processamento em disco(FastPFor): 71058ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(Milc): 33.306us
+	#Tempo de processamento em disco(Milc): 140196ms
+
+
+***Query 6
+	#Documentos relevantes: 54450 
+	#Tempo de processamento em memoria(Descomprimido): 10.556us
+	#Tempo de processamento em disco(Descomprimido): 601123ms
+
+	#Documentos relevantes: 54450 
+	#Tempo de processamento em memoria(PForDelta): 20.472us
+	#Tempo de processamento em disco(PForDelta): 71130ms
+
+	#Documentos relevantes: 54450 
+	#Tempo de processamento em memoria(FastPFor): 21.719us
+	#Tempo de processamento em disco(FastPFor): 70949ms
+
+	#Documentos relevantes: 54450 
+	#Tempo de processamento em memoria(Milc): 13.967us
+	#Tempo de processamento em disco(Milc): 140033ms
+
+
+***Query 7
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(Descomprimido): 34.571us
+	#Tempo de processamento em disco(Descomprimido): 612249ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(PForDelta): 55.16us
+	#Tempo de processamento em disco(PForDelta): 71250ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(FastPFor): 61.543us
+	#Tempo de processamento em disco(FastPFor): 71219ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(Milc): 48.491us
+	#Tempo de processamento em disco(Milc): 140279ms
+
+
+***Query 8
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(Descomprimido): 21.048us
+	#Tempo de processamento em disco(Descomprimido): 623057ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(PForDelta): 36.75us
+	#Tempo de processamento em disco(PForDelta): 71350ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(FastPFor): 34.769us
+	#Tempo de processamento em disco(FastPFor): 71099ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(Milc): 30.393us
+	#Tempo de processamento em disco(Milc): 140347ms
+
+
+***Query 9
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(Descomprimido): 23.706us
+	#Tempo de processamento em disco(Descomprimido): 601584ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(PForDelta): 33.992us
+	#Tempo de processamento em disco(PForDelta): 71128ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(FastPFor): 37.162us
+	#Tempo de processamento em disco(FastPFor): 71043ms
+
+	#Documentos relevantes: 
+	#Tempo de processamento em memoria(Milc): 31.771us
+	#Tempo de processamento em disco(Milc): 140063ms
+
+
+***Query 10
+	#Documentos relevantes: 89394 51003 
+	#Tempo de processamento em memoria(Descomprimido): 11.438us
+	#Tempo de processamento em disco(Descomprimido): 603532ms
+
+	#Documentos relevantes: 89394 51003 
+	#Tempo de processamento em memoria(PForDelta): 22.838us
+	#Tempo de processamento em disco(PForDelta): 71105ms
+
+	#Documentos relevantes: 89394 51003 
+	#Tempo de processamento em memoria(FastPFor): 24.402us
+	#Tempo de processamento em disco(FastPFor): 71189ms
+
+	#Documentos relevantes: 89394 51003 
+	#Tempo de processamento em memoria(Milc): 19.436us
+	#Tempo de processamento em disco(Milc): 140150ms
+
+
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  02:39 h
+[[1;34mINFO[m] Finished at: 2020-02-14T19:25:03-04:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

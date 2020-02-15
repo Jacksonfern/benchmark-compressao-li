@@ -3,7 +3,11 @@ package com.jackson.app;
 import java.lang.Math;
 import java.util.ArrayList;
 
-public class Milc{
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Milc implements Codec{
+	private FileWriter writer;
 	final static int OVERHEAD = 80;
 	final static int L = 2*OVERHEAD;
 	final static int[] mask = {0x00000000,
@@ -17,10 +21,20 @@ public class Milc{
 			0x1fffffff, 0x3fffffff, 0x7fffffff, 0xffffffff
 		};
 
-	private static void binary(int x){ //converte pra binario (pra depuracao)
-		for(int i=31; i>=0; i--)
-			System.out.print((x>>>i)&1);
-		System.out.println("");
+	// private static void binary(int x){ //converte pra binario (pra depuracao)
+	// 	for(int i=31; i>=0; i--)
+	// 		System.out.print((x>>>i)&1);
+	// 	System.out.println("");
+	// }
+
+	public Milc(String src){
+		if(src==null)
+			return;
+		try{
+            this.writer = new FileWriter(src);
+        }catch(IOException e){
+            this.writer = null;
+        }
 	}
 
 	private static int numBits(int x){ //Quantos bits precisa para representar um num
@@ -30,6 +44,7 @@ public class Milc{
 		return cont;
 	}
 
+	@Override
 	public int[] compress(int[] data){
 		int[] memo=new int[data.length];
 		int[] blocks=new int[data.length];
@@ -99,6 +114,7 @@ public class Milc{
 		return output;
 	}
 
+	@Override
 	public int[] uncompress(int[] data){
 		int pos=0, cont=1, length=data[0];
 		ArrayList<Integer> b = new ArrayList<Integer>();
@@ -149,6 +165,35 @@ public class Milc{
 		// }
 
 		return out;
+	}
+
+	@Override
+	public String getMethod(){
+		return "Milc";
+	}
+
+	@Override
+    public String getFileName(){
+        return "/milc.postings";
+    }
+
+	@Override
+    public void write(int[] data){
+        if(writer==null)
+            return;
+        try{
+            for(int num:data)
+                writer.write(num + " ");
+            writer.write('\n');
+        }catch(IOException e){
+            System.out.println(e.getMessage());
+        }
+	}
+
+	@Override
+	public void closeWriter() throws IOException{
+		if(writer!=null)
+			writer.close();
 	}
 
 	// public static void main(String[] args){
